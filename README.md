@@ -245,7 +245,7 @@ define service{
         host_name                       DODREAMCATCHER1
         service_description             Disk Usage Report - maprN - USER 
         check_command                   check_ncdu_gzip!/root/ncdu-archives/ncdu-output-user-LATEST.gz!400000!500000!24!15!gb
-        _graphitepostfix                nrpe
+        _graphitepostfix                nrpe_ncdu_user
         }
 
 define service{
@@ -253,7 +253,7 @@ define service{
         host_name                       DODREAMCATCHER1
         service_description             Disk Usage Report - maprN - DIGITAL 
         check_command                   check_ncdu_gzip!/root/ncdu-archives/ncdu-output-digital-LATEST.gz!400000!500000!24!15!gb
-        _graphitepostfix                nrpe
+        _graphitepostfix                nrpe_ncdu_digital
         }
 
 define service{
@@ -261,7 +261,7 @@ define service{
         host_name                       DODREAMCATCHER1
         service_description             Disk Usage Report - maprN - TARGETAUDIENCE 
         check_command                   check_ncdu_gzip!/root/ncdu-archives/ncdu-output-targetaudience-LATEST.gz!400000!500000!24!15!gb
-        _graphitepostfix                nrpe
+        _graphitepostfix                nrpe_ncdu_targetaudience
         }
 
 define service{
@@ -269,6 +269,6 @@ define service{
         host_name                       DODREAMCATCHER1
         service_description             Disk Usage Report - maprN - TRXNMATCH 
         check_command                   check_ncdu_gzip!/root/ncdu-archives/ncdu-output-trxnmatch-LATEST.gz!400000!500000!24!15!gb
-        _graphitepostfix                nrpe
+        _graphitepostfix                nrpe_ncdu_trxnmatch
         }
 ```
