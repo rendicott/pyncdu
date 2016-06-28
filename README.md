@@ -18,7 +18,7 @@ directory as the `pyncdu.py` script. In my case I just copied the two files to t
 The script is essentially a helper for running
 the following sequence of commands:
 
-`ncdu -1xo- /mapr/mapr.cardlytics.com/user | gzip /tmp/ncdu-output-user.gz`
+`ncdu -1xo- /mapr/mapr.contoso.com/user | gzip /tmp/ncdu-output-user.gz`
 
 then it takes that file and moves it off to an archive server of you choice by runnning
 
@@ -91,22 +91,22 @@ format_timestamp: %Y%m%d.%H%M%S
 name: user
 
 # path that you want to want to scan with the ncdu command
-path: /mapr/mapr.cardlytics.com/user
+path: /mapr/mapr.contoso.com/user
 
 
 [path_02]
 name: other
-path: /mapr/mapr.cardlytics.com/
+path: /mapr/mapr.contoso.com/
 
 # excludes_list is optional. Each of these exclude paths
 # will be used for the --exclude option with NCDU
 excludes_list: [
-        "/mapr/mapr.cardlytics.com/digital",
-        "/mapr/mapr.cardlytics.com/datahub",
-        "/mapr/mapr.cardlytics.com/stage",
-        "/mapr/mapr.cardlytics.com/apps",
-        "/mapr/mapr.cardlytics.com/apps",
-        "/mapr/mapr.cardlytics.com/targetaudience"
+        "/mapr/mapr.contoso.com/digital",
+        "/mapr/mapr.contoso.com/datahub",
+        "/mapr/mapr.contoso.com/stage",
+        "/mapr/mapr.contoso.com/apps",
+        "/mapr/mapr.contoso.com/apps",
+        "/mapr/mapr.contoso.com/targetaudience"
     ]
 ```
 
