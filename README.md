@@ -272,3 +272,9 @@ define service{
         _graphitepostfix                nrpe_ncdu_trxnmatch
         }
 ```
+
+## Screenshots
+
+Here's showing how you can use the metrics output from the checks to send to Graphite and  graph disk usage over time.
+
+![pyNcdu metrics visualized in Graphite](/screenshots/pyncdu-graphite.PNG?raw=true "pyNcdu metrics visualized in Graphite")
