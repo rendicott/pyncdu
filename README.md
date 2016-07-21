@@ -278,3 +278,10 @@ define service{
 Here's showing how you can use the metrics output from the checks to send to Graphite and  graph disk usage over time.
 
 ![pyNcdu metrics visualized in Graphite](/screenshots/pyncdu-graphite.PNG?raw=true "pyNcdu metrics visualized in Graphite")
+
+![pyNcdu checks in Nagios](/screenshots/pyncdu-nagios-status.PNG?raw=true "pyNcdu checks in Nagios")
+
+Here's the result of comparing the output of commands `zcat archive1.tar.gz | grep ncdu -f -` and `zcat archive2.tar.gz | grep ncdu -f -` in order to see what files caused the bump. 
+![comparing archived scan before size bump](/screenshots/pyncdu-compare1.PNG?raw=true "comparing archived scan before size bump")
+
+![comparing archived scan after size bump](/screenshots/pyncdu-compare2.PNG?raw=true "comparing archived scan after size bump")
